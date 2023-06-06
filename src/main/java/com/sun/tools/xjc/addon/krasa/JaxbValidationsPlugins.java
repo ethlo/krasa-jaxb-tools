@@ -198,7 +198,7 @@ public class JaxbValidationsPlugins extends Plugin {
 
         // https://www.ibm.com/developerworks/webservices/library/ws-tip-null/index.html
         // http://www.dimuthu.org/blog/2008/08/18/xml-schema-nillabletrue-vs-minoccurs0/comment-page-1/
-        if (property.isCollection() &&
+        if (property.isCollection() && !property.isValueList() &&
                 !hasAnnotation(field, "Size") &&
                 (maxOccurs != 0 || minOccurs != 0)) {
 

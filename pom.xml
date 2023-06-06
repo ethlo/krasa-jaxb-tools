@@ -9,7 +9,7 @@
       https://oss.sonatype.org/#nexus-search;quick~com.fillumina
   -->
 
-  <groupId>com.fillumina</groupId>
+  <groupId>com.ethlo</groupId>
   <artifactId>krasa-jaxb-tools</artifactId>
   <version>2.3-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -208,10 +208,6 @@
                 <goals>
                   <goal>sign</goal>
                 </goals>
-                <configuration>
-                  <keyname>${gpg.keyname}</keyname>
-                  <passphraseServerId>${gpg.passphrase}</passphraseServerId>
-                </configuration>
               </execution>
             </executions>
           </plugin>
